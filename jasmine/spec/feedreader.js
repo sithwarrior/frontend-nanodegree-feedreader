@@ -32,11 +32,28 @@ $(function() {
          * and that the URL is not empty.
          */
 
+         it('All feeds have an url and url is not empty', function() {
+           var numOfFeeds = allFeeds.length;
+           for (var i = 0; i < numOfFeeds; i++) {
+             expect(allFeeds[i].url).toBeDefined();
+             expect(allFeeds[i].url).not.toBe('');
+           }
+         });
+
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+
+         it('All feeds have a name, and name is not empty', function(){
+           var numOfFeeds = allFeeds.length;
+           for (var i = 0; i < numOfFeeds; i++) {
+             expect(allFeeds[i].name).toBeDefined();
+             expect(allFeeds[i].name).not.toBe('');
+           }
+         });
+
     });
 
 
