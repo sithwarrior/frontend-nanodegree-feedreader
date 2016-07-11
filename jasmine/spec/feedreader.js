@@ -100,6 +100,7 @@ $(function() {
        it('Has at least one .entry element after loadfeed', function(){
          expect($('.entry').length).toBeGreaterThan(0);
        });
+    });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
@@ -122,9 +123,5 @@ $(function() {
           done();
         });
       });
-
-
     });
-  });
-
 }());
